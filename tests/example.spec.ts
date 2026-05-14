@@ -5,4 +5,5 @@ test('Simple Get Request', async ({ request }) => {
   const responseObj = await response.json();
   console.log(responseObj);
   expect(responseObj.tags[0]).toEqual('Test');
+  expect(responseObj.tags).toHaveLength(10);
 });
