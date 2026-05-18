@@ -7,3 +7,8 @@ test('Simple Get Request', async ({ request }) => {
   expect(responseObj.tags[0]).toEqual('Test');
   expect(responseObj.tags).toHaveLength(10);
 });
+
+
+test('Simple POST Request', async ({ request }) => {
+
+});
